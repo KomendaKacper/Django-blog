@@ -4,3 +4,6 @@ from django.http import HttpResponse
 
 def home(response):
     return render(response, "main/home.html", {})
+
+def index(response):
+    return render(response, "main/index.html", {})
