@@ -8,5 +8,6 @@ def home(request):
         'posts':Post.objects.all()
     }
     return render(request,'main/home.html', context)
+    
 def about(request):
     return render(request,'main/about.html', {'title': 'About'})
