@@ -4,7 +4,8 @@ from .views import (
     PostDetailView,
     PostCreateView,
     PostUpdateView,
-    PostDeleteView
+    PostDeleteView,
+    UserPostListView
 )
 
 from . import views
@@ -12,6 +13,7 @@ from users import views as user_views
 
 urlpatterns = [
     path('', PostListView.as_view(), name="main-home"),
+    path('user/<str:username>', UserPostListView.as_view(), name="user-posts"),
     path('about/', views.about, name="main-about"),
     path('home/', PostListView.as_view(), name="main-home"),
     path('register/', user_views.register, name="register"),
