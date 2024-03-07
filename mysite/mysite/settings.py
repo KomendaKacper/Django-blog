@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'main.apps.MainConfig',
     'users.apps.UsersConfig',
     'crispy_forms',
+    'crispy_bootstrap4'
 ]
 
 MIDDLEWARE = [
@@ -139,3 +140,4 @@ EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 EMAIL_HOST_USER = os.environ.get('Email')
 EMAIL_HOST_PASSWORD = os.environ.get('Haslo')
+
