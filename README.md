@@ -1,4 +1,4 @@
-### Django Blog
+## Django Blog
 ---
 *Django Blog* is an application that allows users to create and manage blogs and user profiles. It is built using Django, HTML, and CSS, providing an easy and intuitive platform for sharing content with others.
 
